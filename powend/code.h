@@ -91,9 +91,9 @@ extern mach_port_t powerd_task_port;
 
 int check_uexploit_success();
 // userland exploit
-void start_uexploit(void);
+mach_port_t start_uexploit(void);
 // kernel exploit
-int start_kexploit();
+//int start_kexploit();
 //full-chain exploit
 void start_jb(void);
 int fill_memory_with_user_data(uint64_t target,uint32_t size,uint32_t magic,uint64_t *addr);
